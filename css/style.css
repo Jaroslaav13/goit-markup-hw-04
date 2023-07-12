@@ -154,6 +154,10 @@ body{
 .hero-section{
 background: var(--navy-blue);
 padding: 188px 0;
+background-image:linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)), url(../images/hero.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
 }
 .hero-container{
        
@@ -166,8 +170,8 @@ padding: 188px 0;
         font-weight: 700;
         line-height:1.07;
         letter-spacing: 0.02em;
-        margin-bottom: 48px;
         margin: 0 auto;
+        margin-bottom: 48px;
         max-width: 496px
         
     }
@@ -263,7 +267,9 @@ padding: 188px 0;
         letter-spacing: 0.02em;
                     
     }
-
+.customers{
+    padding: 120px 120px;
+}
 
 /* ------FOOTER--------------- */
 
