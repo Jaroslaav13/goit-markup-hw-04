@@ -71,6 +71,19 @@ body{
     justify-content: space-between;
     
 }
+
+.current::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--ocean);
+    bottom: 0;
+    left: 0;
+    transition-property: ;
+
+}
 .navigation{
     display: flex;
     align-items: center;
@@ -102,7 +115,7 @@ body{
     
 }
 .list-nav{
-   
+position: relative;
 }
  .link-nav{
     padding: 24px 0;
@@ -201,11 +214,14 @@ background-image:linear-gradient(rgba(46, 47, 66, 0.7),
     padding-top: 120px;
     padding-bottom: 120px;
 }
+.icon-box{
+       width: 264px;
+        height: 112px;
+        border-radius: 4px;
+        background: var(--cloud);
+}
 .credo-icon{
-    width: 264px;
-    height: 112px;
-    border-radius: 4px;
-    background:var(--cloud);
+    margin: 24px 100px;
     
 }
 .section-work{
@@ -252,8 +268,26 @@ background-image:linear-gradient(rgba(46, 47, 66, 0.7),
         text-align: center;
         width: calc((100% - 72px) / 4);
         border-radius: 0px 0px 4px 4px;
+            
+    }
+    .social-group{
+        display: flex;
+        gap: 24px;
         
-     
+    }
+    .social-item{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: var(--iris);
+        border: var(--iris);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .social-icon-team{
+    fill: var(--cloud);    
+        
     }
     .group{
         padding: 32px 16px;
@@ -345,23 +379,25 @@ fill: var(--ocean);
         max-width: 264px;
 }
 .social-section{
-    padding-top: 0;
-padding-left: 540px;
-padding-right: 692px;
-   
-}
-.social-item{
-    background-color: var(--iris);
-    border: var(--iris);
-    border-radius: 50%;
-    padding: 8px;
+ 
     
 }
-.social-link{
-    display: block;
+  
+.media-title{
+        color: var(--white);
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        
+        
 }
 .social-list{
     display: flex;
+    gap: 16px;
+    justify-content: center;
     
 }
 .social-icon{
@@ -465,3 +501,22 @@ padding: 96px 0 120px 0;
     top: 50%;
     transform: translate(-50%,-77%);
  }
+ .modal-close-btn{
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    border: 1px solid var(--light-slate);
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+ }
+ .close-icon{
+    
+ }
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
