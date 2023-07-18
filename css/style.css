@@ -171,6 +171,7 @@ body{
 .hero-section{
     background: var(--navy-blue);
     padding: 188px 0;
+    background-size: cover;
     background-image:linear-gradient(rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)), url(../images/hero.jpg);
     background-repeat: no-repeat;
@@ -224,10 +225,14 @@ body{
     padding-bottom: 120px;
 }
 .icon-box{
-       width: 264px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 264px;
         height: 112px;
         border-radius: 4px;
         background: var(--cloud);
+        margin-bottom: 8px;
 }
 .credo-icon{
     margin: 24px 100px;
