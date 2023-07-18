@@ -551,6 +551,9 @@ padding: 96px 0 120px 0;
     transform: translate(-50%,-77%);
  }
  .modal-close-btn{
+   display: flex;
+   justify-content: center;
+   align-items: center; 
     width: 8px;
     height: 8px;
     position: absolute;
