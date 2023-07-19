@@ -80,9 +80,9 @@ body{
     height: 4px;
     border-radius: 2px;
     background: var(--ocean);
+    color: var(--ocean);
     bottom: -1px;;
     left: 0;
-    color: var(--ocean);
 
 }
 .navigation{
@@ -127,7 +127,7 @@ body{
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 .link-nav.link{
-    color:var(--ocean);
+    color:var(--navy-blue);
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -235,7 +235,7 @@ body{
         margin-bottom: 8px;
 }
 .credo-icon{
-    margin: 24px 100px;
+    
     
 }
 .section-work{
@@ -246,7 +246,7 @@ body{
     display: flex;
      gap: 24px;
     }
-.list-img{
+.list-images{
     width: calc((100% - 48px) / 3);
 }   
 .list-item{
@@ -338,11 +338,10 @@ body{
 }
 .customers-list{
     display: flex;
-    width: calc((100% - 24 * 5) / 6);
     gap: 24px;
 }
 .customers-item{
-    width: 168px;
+    width: calc((100% - 24px * 5) / 6);
     height: 88px;
     
     
@@ -358,7 +357,7 @@ body{
     align-items: center;
     justify-content: center;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-icon{
     fill:currentColor;
@@ -507,15 +506,13 @@ padding: 96px 0 120px 0;
 
 .list-made {
     width: calc((100% - 48px) / 3) ;
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-           
+               
 }   
 .list-made-overflow:hover .text-portfolio-overflow {
-    transform: translateY(0);
+    
 }
 .list-made-overflow{
-    position: relative;
-    overflow: hidden;
+   
 }
 .text-portfolio-overflow{
     position: absolute;
@@ -535,12 +532,17 @@ padding: 96px 0 120px 0;
 }
 .list-img{
     display: block;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    position: relative;
+    overflow: hidden;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);    
+}
+.list-img:is(:hover,:focus){
+     transform: translateY(0);
+     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);    
 }
-
 
 .categories{
     padding: 32px 16px;
